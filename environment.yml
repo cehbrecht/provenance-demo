@@ -1,0 +1,8 @@
+# conda env create -f environment.yml
+name: provdemo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - prov
