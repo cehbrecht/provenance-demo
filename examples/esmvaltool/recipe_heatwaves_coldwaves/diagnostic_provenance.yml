@@ -1,0 +1,22 @@
+? /pf/b/b381141/failed/recipe_heatwaves_coldwaves.yml/recipe_heatwaves_coldwaves_20200727_150216/work/heatwaves_coldwaves/main/tasmax_extreme_spell_durationsummer_bcc-csm1-1_rcp85_2060_2080.nc
+: ancestors:
+  - /pf/b/b381141/failed/recipe_heatwaves_coldwaves.yml/recipe_heatwaves_coldwaves_20200727_150216/preproc/heatwaves_coldwaves/tasmax/CMIP5_bcc-csm1-1_day_rcp85_r1i1p1_tasmax_2060-2080.nc
+  - /pf/b/b381141/failed/recipe_heatwaves_coldwaves.yml/recipe_heatwaves_coldwaves_20200727_150216/preproc/heatwaves_coldwaves/tasmax/CMIP5_bcc-csm1-1_day_historical_r1i1p1_tasmax_1971-2000.nc
+  authors:
+  - hunter_alasdair
+  - manubens_nicolau
+  - caron_louis-philippe
+  projects:
+  - c3s-magic
+  caption: Days  summer tasmax 2060-2080 > the 80 th quantile for 1971-2000 (rcp85)
+  statistics:
+  - other
+  op: '>'
+  qtile: 0.8
+  spell_length: 5
+  season: summer
+  realms:
+  - atmos
+  themes:
+  - phys
+  plot_file: /pf/b/b381141/failed/recipe_heatwaves_coldwaves.yml/recipe_heatwaves_coldwaves_20200727_150216/plots/heatwaves_coldwaves/main/tasmax_extreme_spell_durationsummer_bcc-csm1-1_rcp85_2060_2080.png

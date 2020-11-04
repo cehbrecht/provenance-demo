@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<prov:document xmlns:file="https://www.esmvaltool.org/file" xmlns:attribute="https://www.esmvaltool.org/attribute" xmlns:preprocessor="https://www.esmvaltool.org/preprocessor" xmlns:task="https://www.esmvaltool.org/task" xmlns:software="https://www.esmvaltool.org/software" xmlns:recipe="https://www.esmvaltool.org/recipe" xmlns:author="https://www.esmvaltool.org/author" xmlns:project="https://www.esmvaltool.org/project" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <prov:activity prov:id="software:esmvaltool==2.0.0"/>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_rainfarm.yml"/>
+    <prov:agent prov:ref="author:von Hardenberg, Jost"/>
+  </prov:wasAttributedTo>
+  <prov:activity prov:id="task:rainfarm/rainfarm"/>
+  <prov:agent prov:id="author:von Hardenberg, Jost">
+    <attribute:institute>ISAC-CNR, Torino, Italy</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0002-5312-8070</attribute:orcid>
+  </prov:agent>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_rainfarm.yml"/>
+    <prov:agent prov:ref="project:Copernicus Climate Change Service 34a Lot 2 (MAGIC) project"/>
+  </prov:wasAttributedTo>
+  <prov:entity prov:id="recipe:recipe_rainfarm.yml">
+    <attribute:description>Recipe for performing stochastic downscaling of precipitation fields
+calling the RainFARM package by J. von Hardenberg (ISAC-CNR)
+</attribute:description>
+    <attribute:references>['donofrio14jh', 'rebora06jhm', 'terzago18nhess']</attribute:references>
+  </prov:entity>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_rainfarm.yml"/>
+    <prov:agent prov:ref="author:Arnone, Enrico"/>
+  </prov:wasAttributedTo>
+  <prov:agent prov:id="author:Arnone, Enrico">
+    <attribute:institute>ISAC-CNR, Torino, Italy</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0001-6740-5051</attribute:orcid>
+  </prov:agent>
+  <prov:wasStartedBy>
+    <prov:activity prov:ref="task:rainfarm/rainfarm"/>
+    <prov:trigger prov:ref="recipe:recipe_rainfarm.yml"/>
+    <prov:starter prov:ref="software:esmvaltool==2.0.0"/>
+  </prov:wasStartedBy>
+  <prov:agent prov:id="project:Copernicus Climate Change Service 34a Lot 2 (MAGIC) project"/>
+  <prov:entity prov:id="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/work/rainfarm/rainfarm/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_downscaled_0001.nc">
+    <attribute:caption>RainFARM precipitation downscaling</attribute:caption>
+    <attribute:conserv_glob>False</attribute:conserv_glob>
+    <attribute:conserv_smooth>True</attribute:conserv_smooth>
+    <attribute:domains>('regional',)</attribute:domains>
+    <attribute:nens>2</attribute:nens>
+    <attribute:nf>8</attribute:nf>
+    <attribute:realms>('atmosphere',)</attribute:realms>
+    <attribute:references>['donofrio14jh', 'rebora06jhm', 'terzago18nhess']</attribute:references>
+    <attribute:script>rainfarm</attribute:script>
+    <attribute:script_file>rainfarm/rainfarm.jl</attribute:script_file>
+    <attribute:slope>1.7</attribute:slope>
+    <attribute:statistics>('other statistics',)</attribute:statistics>
+    <attribute:themes>('physics',)</attribute:themes>
+    <attribute:weights_climo>False</attribute:weights_climo>
+  </prov:entity>
+  <prov:agent prov:id="author:von Hardenberg, Jost">
+    <attribute:institute>ISAC-CNR, Torino, Italy</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0002-5312-8070</attribute:orcid>
+  </prov:agent>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/work/rainfarm/rainfarm/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_downscaled_0001.nc"/>
+    <prov:agent prov:ref="author:von Hardenberg, Jost"/>
+  </prov:wasAttributedTo>
+  <prov:agent prov:id="author:Arnone, Enrico">
+    <attribute:institute>ISAC-CNR, Torino, Italy</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0001-6740-5051</attribute:orcid>
+  </prov:agent>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/work/rainfarm/rainfarm/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_downscaled_0001.nc"/>
+    <prov:agent prov:ref="author:Arnone, Enrico"/>
+  </prov:wasAttributedTo>
+  <prov:agent prov:id="project:Copernicus Climate Change Service 34a Lot 2 (MAGIC) project"/>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/work/rainfarm/rainfarm/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_downscaled_0001.nc"/>
+    <prov:agent prov:ref="project:Copernicus Climate Change Service 34a Lot 2 (MAGIC) project"/>
+  </prov:wasAttributedTo>
+  <prov:entity prov:id="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997.nc">
+    <attribute:alias>EC-EARTH</attribute:alias>
+    <attribute:dataset>EC-EARTH</attribute:dataset>
+    <attribute:diagnostic>rainfarm</attribute:diagnostic>
+    <attribute:end_year>1997</attribute:end_year>
+    <attribute:ensemble>r1i1p1</attribute:ensemble>
+    <attribute:exp>historical</attribute:exp>
+    <attribute:filename>/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997.nc</attribute:filename>
+    <attribute:frequency>day</attribute:frequency>
+    <attribute:institute>['ICHEC']</attribute:institute>
+    <attribute:long_name>Precipitation</attribute:long_name>
+    <attribute:mip>day</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:preprocessor>preproc</attribute:preprocessor>
+    <attribute:project>CMIP5</attribute:project>
+    <attribute:recipe_dataset_index>0</attribute:recipe_dataset_index>
+    <attribute:short_name>pr</attribute:short_name>
+    <attribute:standard_name>precipitation_flux</attribute:standard_name>
+    <attribute:start_year>1997</attribute:start_year>
+    <attribute:units>kg m-2 s-1</attribute:units>
+    <attribute:variable_group>pr</attribute:variable_group>
+    <preprocessor:cleanup>{'remove': ['/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_fixed']}</preprocessor:cleanup>
+    <preprocessor:cmor_check_data>{'cmor_table': 'CMIP5', 'mip': 'day', 'short_name': 'pr', 'frequency': 'day', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:cmor_check_data>
+    <preprocessor:cmor_check_metadata>{'cmor_table': 'CMIP5', 'mip': 'day', 'short_name': 'pr', 'frequency': 'day', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:cmor_check_metadata>
+    <preprocessor:concatenate>{}</preprocessor:concatenate>
+    <preprocessor:extract_region>{'start_longitude': 5, 'end_longitude': 15, 'start_latitude': 40, 'end_latitude': 50}</preprocessor:extract_region>
+    <preprocessor:extract_time>{'start_year': 1997, 'end_year': 1998, 'start_month': 1, 'end_month': 1, 'start_day': 1, 'end_day': 1}</preprocessor:extract_time>
+    <preprocessor:fix_data>{'project': 'CMIP5', 'dataset': 'EC-EARTH', 'short_name': 'pr', 'mip': 'day', 'frequency': 'day', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:fix_data>
+    <preprocessor:fix_file>{'project': 'CMIP5', 'dataset': 'EC-EARTH', 'short_name': 'pr', 'mip': 'day', 'output_dir': '/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_fixed'}</preprocessor:fix_file>
+    <preprocessor:fix_metadata>{'project': 'CMIP5', 'dataset': 'EC-EARTH', 'short_name': 'pr', 'mip': 'day', 'frequency': 'day', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:fix_metadata>
+    <preprocessor:load>{'callback': &lt;function concatenate_callback at 0x7f3b58b7edc0&gt;}</preprocessor:load>
+    <preprocessor:regrid>{'target_grid': '1x1', 'scheme': 'area_weighted'}</preprocessor:regrid>
+    <preprocessor:save>{'compress': False, 'filename': '/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997.nc'}</preprocessor:save>
+  </prov:entity>
+  <prov:wasStartedBy>
+    <prov:activity prov:ref="task:rainfarm/pr"/>
+    <prov:trigger prov:ref="recipe:recipe_rainfarm.yml"/>
+    <prov:starter prov:ref="software:esmvaltool==2.0.0"/>
+  </prov:wasStartedBy>
+  <prov:entity prov:id="file:/mnt/lustre02/work/bd0854/DATA/ESMValTool2/CMIP5_DKRZ/ICHEC/EC-EARTH/historical/day/atmos/day/r1i1p1/v20131231/pr/pr_day_EC-EARTH_historical_r1i1p1_19900101-19991231.nc">
+    <attribute:CDI>Climate Data Interface version 1.4.4 (http://code.zmaw.de/projects/cdi)</attribute:CDI>
+    <attribute:CDO>Climate Data Operators version 1.4.4 (http://code.zmaw.de/projects/cdo)</attribute:CDO>
+    <attribute:Conventions>CF-1.4</attribute:Conventions>
+    <attribute:branch_time>2125.0</attribute:branch_time>
+    <attribute:cmor_version>2.8.0</attribute:cmor_version>
+    <attribute:comment>Equilibrium reached after preindustrial spin-up after which data were output starting with nominal date of January 1850</attribute:comment>
+    <attribute:contact>Alastair McKinstry &lt;alastair.mckinstry@ichec.ie&gt;</attribute:contact>
+    <attribute:creation_date>2012-05-11T08:50:13Z</attribute:creation_date>
+    <attribute:experiment>historical</attribute:experiment>
+    <attribute:experiment_id>historical</attribute:experiment_id>
+    <attribute:forcing>Nat,Ant</attribute:forcing>
+    <attribute:frequency>day</attribute:frequency>
+    <attribute:history>Mon May 14 02:51:52 2012: cdo cat historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19900101-19901231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19910101-19911231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19920101-19921231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19930101-19931231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19940101-19941231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19950101-19951231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19960101-19961231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19970101-19971231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19980101-19981231.nc historical/day/atmos/pr/r1i1p1/pr_day_EC-EARTH_historical_r1i1p1_19990101-19991231.nc x
+Output from archive/historical 2012-05-11T08:50:06Z CMOR rewrote data to comply with CF standards and CMIP5 requirements.</attribute:history>
+    <attribute:initialization_method>1</attribute:initialization_method>
+    <attribute:institute_id>ICHEC</attribute:institute_id>
+    <attribute:institution>EC-Earth (European Earth System Model)</attribute:institution>
+    <attribute:model_id>EC-EARTH</attribute:model_id>
+    <attribute:modeling_realm>atmos</attribute:modeling_realm>
+    <attribute:parent_experiment>pre-industrial control</attribute:parent_experiment>
+    <attribute:parent_experiment_id>piControl</attribute:parent_experiment_id>
+    <attribute:parent_experiment_rip>r1i1p1</attribute:parent_experiment_rip>
+    <attribute:physics_version>1</attribute:physics_version>
+    <attribute:product>output</attribute:product>
+    <attribute:project_id>CMIP5</attribute:project_id>
+    <attribute:realization>1</attribute:realization>
+    <attribute:references>Model described by Hazeleger et al. (Bull. Amer. Meteor. Soc., 2010, 91, 1357-1363). Also see http://ecearth.knmi.nl.</attribute:references>
+    <attribute:table_id>Table day (26 July 2011) 0640f2bc62aad4ebefa8ecc119311890</attribute:table_id>
+    <attribute:title>EC-EARTH model output prepared for CMIP5 historical</attribute:title>
+    <attribute:tracking_id>aca3f93f-be2f-4c8d-81b2-f0f4fbe572ba</attribute:tracking_id>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997.nc"/>
+    <prov:usedEntity prov:ref="file:/mnt/lustre02/work/bd0854/DATA/ESMValTool2/CMIP5_DKRZ/ICHEC/EC-EARTH/historical/day/atmos/day/r1i1p1/v20131231/pr/pr_day_EC-EARTH_historical_r1i1p1_19900101-19991231.nc"/>
+    <prov:activity prov:ref="task:rainfarm/pr"/>
+  </prov:wasDerivedFrom>
+  <prov:activity prov:id="task:rainfarm/pr"/>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/work/rainfarm/rainfarm/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_downscaled_0001.nc"/>
+    <prov:usedEntity prov:ref="file:/pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997.nc"/>
+    <prov:activity prov:ref="task:rainfarm/rainfarm"/>
+  </prov:wasDerivedFrom>
+</prov:document>

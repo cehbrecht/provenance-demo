@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<prov:document xmlns:file="https://www.esmvaltool.org/file" xmlns:attribute="https://www.esmvaltool.org/attribute" xmlns:preprocessor="https://www.esmvaltool.org/preprocessor" xmlns:task="https://www.esmvaltool.org/task" xmlns:software="https://www.esmvaltool.org/software" xmlns:recipe="https://www.esmvaltool.org/recipe" xmlns:project="https://www.esmvaltool.org/project" xmlns:author="https://www.esmvaltool.org/author" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <prov:activity prov:id="software:esmvaltool==2.0.0"/>
+  <prov:wasStartedBy>
+    <prov:activity prov:ref="task:diagnostic1/script1"/>
+    <prov:trigger prov:ref="recipe:recipe_python.yml"/>
+    <prov:starter prov:ref="software:esmvaltool==2.0.0"/>
+  </prov:wasStartedBy>
+  <prov:agent prov:id="project:DLR project ESMVal"/>
+  <prov:agent prov:id="author:Righi, Mattia">
+    <attribute:email>mattia.righi@dlr.de</attribute:email>
+    <attribute:institute>DLR, Germany</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0003-3827-5950</attribute:orcid>
+  </prov:agent>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_python.yml"/>
+    <prov:agent prov:ref="author:Righi, Mattia"/>
+  </prov:wasAttributedTo>
+  <prov:entity prov:id="recipe:recipe_python.yml">
+    <attribute:description>Example recipe that plots the mean precipitation and temperature.
+</attribute:description>
+    <attribute:references>['acknow_project']</attribute:references>
+  </prov:entity>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_python.yml"/>
+    <prov:agent prov:ref="project:DLR project ESMVal"/>
+  </prov:wasAttributedTo>
+  <prov:agent prov:id="author:Andela, Bouwe">
+    <attribute:email>b.andela@esciencecenter.nl</attribute:email>
+    <attribute:institute>NLeSC, Netherlands</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0001-9005-8940</attribute:orcid>
+  </prov:agent>
+  <prov:activity prov:id="task:diagnostic1/script1"/>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_python.yml"/>
+    <prov:agent prov:ref="author:Andela, Bouwe"/>
+  </prov:wasAttributedTo>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="recipe:recipe_python.yml"/>
+    <prov:agent prov:ref="project:Copernicus Climate Change Service 34a Lot 2 (MAGIC) project"/>
+  </prov:wasAttributedTo>
+  <prov:agent prov:id="project:Copernicus Climate Change Service 34a Lot 2 (MAGIC) project"/>
+  <prov:entity prov:id="file:/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_mean.nc">
+    <attribute:caption>Average Air Temperature between 2000 and 2002 according to CanESM2.</attribute:caption>
+    <attribute:domains>('global',)</attribute:domains>
+    <attribute:plot_file>/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/plots/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_mean.png</attribute:plot_file>
+    <attribute:plot_types>('zonal mean',)</attribute:plot_types>
+    <attribute:quickplot>{'plot_type': 'pcolormesh'}</attribute:quickplot>
+    <attribute:realms>('atmosphere',)</attribute:realms>
+    <attribute:references>['acknow_project']</attribute:references>
+    <attribute:script>script1</attribute:script>
+    <attribute:script_file>examples/diagnostic.py</attribute:script_file>
+    <attribute:statistics>('mean',)</attribute:statistics>
+    <attribute:themes>('physics',)</attribute:themes>
+  </prov:entity>
+  <prov:agent prov:id="author:Andela, Bouwe">
+    <attribute:email>b.andela@esciencecenter.nl</attribute:email>
+    <attribute:institute>NLeSC, Netherlands</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0001-9005-8940</attribute:orcid>
+  </prov:agent>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="file:/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_mean.nc"/>
+    <prov:agent prov:ref="author:Andela, Bouwe"/>
+  </prov:wasAttributedTo>
+  <prov:agent prov:id="author:Righi, Mattia">
+    <attribute:email>mattia.righi@dlr.de</attribute:email>
+    <attribute:institute>DLR, Germany</attribute:institute>
+    <attribute:orcid>https://orcid.org/0000-0003-3827-5950</attribute:orcid>
+  </prov:agent>
+  <prov:wasAttributedTo>
+    <prov:entity prov:ref="file:/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_mean.nc"/>
+    <prov:agent prov:ref="author:Righi, Mattia"/>
+  </prov:wasAttributedTo>
+  <prov:entity prov:id="file:/mnt/lustre02/work/bd0854/DATA/ESMValTool2/CMIP5_DKRZ/CCCma/CanESM2/historical/mon/atmos/Amon/r1i1p1/v20120718/ta/ta_Amon_CanESM2_historical_r1i1p1_185001-200512.nc">
+    <attribute:CCCma_data_licence>1) GRANT OF LICENCE - The Government of Canada (Environment Canada) is the 
+owner of all intellectual property rights (including copyright) that may exist in this Data 
+product. You (as "The Licensee") are hereby granted a non-exclusive, non-assignable, 
+non-transferable unrestricted licence to use this data product for any purpose including 
+the right to share these data with others and to make value-added and derivative 
+products from it. This licence is not a sale of any or all of the owner's rights.
+2) NO WARRANTY - This Data product is provided "as-is"; it has not been designed or 
+prepared to meet the Licensee's particular requirements. Environment Canada makes no 
+warranty, either express or implied, including but not limited to, warranties of 
+merchantability and fitness for a particular purpose. In no event will Environment Canada 
+be liable for any indirect, special, consequential or other damages attributed to the 
+Licensee's use of the Data product.</attribute:CCCma_data_licence>
+    <attribute:CCCma_parent_runid>IGA</attribute:CCCma_parent_runid>
+    <attribute:CCCma_runid>IGM</attribute:CCCma_runid>
+    <attribute:Conventions>CF-1.4</attribute:Conventions>
+    <attribute:branch_time>171915.0</attribute:branch_time>
+    <attribute:branch_time_YMDH>2321:01:01:00</attribute:branch_time_YMDH>
+    <attribute:cmor_version>2.5.4</attribute:cmor_version>
+    <attribute:contact>cccma_info@ec.gc.ca</attribute:contact>
+    <attribute:creation_date>2011-03-16T18:47:25Z</attribute:creation_date>
+    <attribute:experiment>historical</attribute:experiment>
+    <attribute:experiment_id>historical</attribute:experiment_id>
+    <attribute:forcing>GHG,Oz,SA,BC,OC,LU,Sl,Vl (GHG includes CO2,CH4,N2O,CFC11,effective CFC12)</attribute:forcing>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:history>2011-03-16T18:47:25Z CMOR rewrote data to comply with CF standards and CMIP5 requirements.</attribute:history>
+    <attribute:initialization_method>1</attribute:initialization_method>
+    <attribute:institute_id>CCCma</attribute:institute_id>
+    <attribute:institution>CCCma (Canadian Centre for Climate Modelling and Analysis, Victoria, BC, Canada)</attribute:institution>
+    <attribute:model_id>CanESM2</attribute:model_id>
+    <attribute:modeling_realm>atmos</attribute:modeling_realm>
+    <attribute:parent_experiment>pre-industrial control</attribute:parent_experiment>
+    <attribute:parent_experiment_id>piControl</attribute:parent_experiment_id>
+    <attribute:parent_experiment_rip>r1i1p1</attribute:parent_experiment_rip>
+    <attribute:physics_version>1</attribute:physics_version>
+    <attribute:product>output</attribute:product>
+    <attribute:project_id>CMIP5</attribute:project_id>
+    <attribute:realization>1</attribute:realization>
+    <attribute:references>http://www.cccma.ec.gc.ca/models</attribute:references>
+    <attribute:source>CanESM2 2010 atmosphere: CanAM4 (AGCM15i, T63L35) ocean: CanOM4 (OGCM4.0, 256x192L40) and CMOC1.2 sea ice: CanSIM1 (Cavitating Fluid, T63 Gaussian Grid) land: CLASS2.7 and CTEM1</attribute:source>
+    <attribute:table_id>Table Amon (31 January 2011) 53b766a395ac41696af40aab76a49ae5</attribute:table_id>
+    <attribute:title>CanESM2 model output prepared for CMIP5 historical</attribute:title>
+    <attribute:tracking_id>6ec92ad9-7b86-4311-bdf5-561756c01d97</attribute:tracking_id>
+  </prov:entity>
+  <prov:wasStartedBy>
+    <prov:activity prov:ref="task:diagnostic1/ta"/>
+    <prov:trigger prov:ref="recipe:recipe_python.yml"/>
+    <prov:starter prov:ref="software:esmvaltool==2.0.0"/>
+  </prov:wasStartedBy>
+  <prov:activity prov:id="task:diagnostic1/ta"/>
+  <prov:entity prov:id="file:/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002.nc">
+    <attribute:alias>CanESM2</attribute:alias>
+    <attribute:dataset>CanESM2</attribute:dataset>
+    <attribute:diagnostic>diagnostic1</attribute:diagnostic>
+    <attribute:end_year>2002</attribute:end_year>
+    <attribute:ensemble>r1i1p1</attribute:ensemble>
+    <attribute:exp>historical</attribute:exp>
+    <attribute:filename>/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002.nc</attribute:filename>
+    <attribute:frequency>mon</attribute:frequency>
+    <attribute:institute>['CCCma']</attribute:institute>
+    <attribute:long_name>Air Temperature</attribute:long_name>
+    <attribute:mip>Amon</attribute:mip>
+    <attribute:modeling_realm>['atmos']</attribute:modeling_realm>
+    <attribute:preprocessor>preprocessor1</attribute:preprocessor>
+    <attribute:project>CMIP5</attribute:project>
+    <attribute:recipe_dataset_index>0</attribute:recipe_dataset_index>
+    <attribute:short_name>ta</attribute:short_name>
+    <attribute:standard_name>air_temperature</attribute:standard_name>
+    <attribute:start_year>2000</attribute:start_year>
+    <attribute:units>K</attribute:units>
+    <attribute:variable_group>ta</attribute:variable_group>
+    <preprocessor:cleanup>{'remove': ['/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_fixed']}</preprocessor:cleanup>
+    <preprocessor:cmor_check_data>{'cmor_table': 'CMIP5', 'mip': 'Amon', 'short_name': 'ta', 'frequency': 'mon', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:cmor_check_data>
+    <preprocessor:cmor_check_metadata>{'cmor_table': 'CMIP5', 'mip': 'Amon', 'short_name': 'ta', 'frequency': 'mon', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:cmor_check_metadata>
+    <preprocessor:concatenate>{}</preprocessor:concatenate>
+    <preprocessor:extract_levels>{'levels': 85000, 'scheme': 'nearest'}</preprocessor:extract_levels>
+    <preprocessor:extract_time>{'start_year': 2000, 'end_year': 2003, 'start_month': 1, 'end_month': 1, 'start_day': 1, 'end_day': 1}</preprocessor:extract_time>
+    <preprocessor:fix_data>{'project': 'CMIP5', 'dataset': 'CanESM2', 'short_name': 'ta', 'mip': 'Amon', 'frequency': 'mon', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:fix_data>
+    <preprocessor:fix_file>{'project': 'CMIP5', 'dataset': 'CanESM2', 'short_name': 'ta', 'mip': 'Amon', 'output_dir': '/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_fixed'}</preprocessor:fix_file>
+    <preprocessor:fix_metadata>{'project': 'CMIP5', 'dataset': 'CanESM2', 'short_name': 'ta', 'mip': 'Amon', 'frequency': 'mon', 'check_level': &lt;CheckLevels.DEFAULT: 3&gt;}</preprocessor:fix_metadata>
+    <preprocessor:load>{'callback': &lt;function concatenate_callback at 0x7f2715c7fdc0&gt;}</preprocessor:load>
+    <preprocessor:multi_model_statistics>{'span': 'overlap', 'statistics': ['mean', 'median'], 'output_products': {'mean': &lt;esmvalcore.preprocessor.PreprocessorFile object at 0x7f270dcaffd0&gt;, 'median': &lt;esmvalcore.preprocessor.PreprocessorFile object at 0x7f270dcc5040&gt;}}</preprocessor:multi_model_statistics>
+    <preprocessor:regrid>{'target_grid': '1x1', 'scheme': 'linear'}</preprocessor:regrid>
+    <preprocessor:save>{'compress': False, 'filename': '/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002.nc'}</preprocessor:save>
+  </prov:entity>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002.nc"/>
+    <prov:usedEntity prov:ref="file:/mnt/lustre02/work/bd0854/DATA/ESMValTool2/CMIP5_DKRZ/CCCma/CanESM2/historical/mon/atmos/Amon/r1i1p1/v20120718/ta/ta_Amon_CanESM2_historical_r1i1p1_185001-200512.nc"/>
+    <prov:activity prov:ref="task:diagnostic1/ta"/>
+  </prov:wasDerivedFrom>
+  <prov:wasDerivedFrom>
+    <prov:generatedEntity prov:ref="file:/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_mean.nc"/>
+    <prov:usedEntity prov:ref="file:/pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002.nc"/>
+    <prov:activity prov:ref="task:diagnostic1/script1"/>
+  </prov:wasDerivedFrom>
+</prov:document>

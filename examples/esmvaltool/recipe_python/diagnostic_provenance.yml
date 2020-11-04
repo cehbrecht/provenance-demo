@@ -1,0 +1,96 @@
+? /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_pr_2000-2002_mean.nc
+: ancestors:
+  - /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/pr/CMIP5_CanESM2_Amon_historical_r1i1p1_pr_2000-2002.nc
+  authors:
+  - andela_bouwe
+  - righi_mattia
+  caption: Average Precipitation between 2000 and 2002 according to CanESM2.
+  domains:
+  - global
+  plot_file: /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/plots/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_pr_2000-2002_mean.png
+  plot_types:
+  - zonal
+  references:
+  - acknow_project
+  statistics:
+  - mean
+? /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_mean.nc
+: ancestors:
+  - /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002.nc
+  authors:
+  - andela_bouwe
+  - righi_mattia
+  caption: Average Air Temperature between 2000 and 2002 according to CanESM2.
+  domains:
+  - global
+  plot_file: /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/plots/diagnostic1/script1/CMIP5_CanESM2_Amon_historical_r1i1p1_ta_2000-2002_mean.png
+  plot_types:
+  - zonal
+  references:
+  - acknow_project
+  statistics:
+  - mean
+? /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_MPI-ESM-LR_Amon_historical_r1i1p1_pr_2000-2002_mean.nc
+: ancestors:
+  - /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/pr/CMIP5_MPI-ESM-LR_Amon_historical_r1i1p1_pr_2000-2002.nc
+  authors:
+  - andela_bouwe
+  - righi_mattia
+  caption: Average Precipitation between 2000 and 2002 according to MPI-ESM-LR.
+  domains:
+  - global
+  plot_file: /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/plots/diagnostic1/script1/CMIP5_MPI-ESM-LR_Amon_historical_r1i1p1_pr_2000-2002_mean.png
+  plot_types:
+  - zonal
+  references:
+  - acknow_project
+  statistics:
+  - mean
+? /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/CMIP5_MPI-ESM-LR_Amon_historical_r1i1p1_ta_2000-2002_mean.nc
+: ancestors:
+  - /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/CMIP5_MPI-ESM-LR_Amon_historical_r1i1p1_ta_2000-2002.nc
+  authors:
+  - andela_bouwe
+  - righi_mattia
+  caption: Average Air Temperature between 2000 and 2002 according to MPI-ESM-LR.
+  domains:
+  - global
+  plot_file: /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/plots/diagnostic1/script1/CMIP5_MPI-ESM-LR_Amon_historical_r1i1p1_ta_2000-2002_mean.png
+  plot_types:
+  - zonal
+  references:
+  - acknow_project
+  statistics:
+  - mean
+? /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/MultiModelMean_Amon_ta_2000-2002_mean.nc
+: ancestors:
+  - /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/MultiModelMean_Amon_ta_2000-2002.nc
+  authors:
+  - andela_bouwe
+  - righi_mattia
+  caption: Average Air Temperature between 2000 and 2002 according to MultiModelMean.
+  domains:
+  - global
+  plot_file: /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/plots/diagnostic1/script1/MultiModelMean_Amon_ta_2000-2002_mean.png
+  plot_types:
+  - zonal
+  references:
+  - acknow_project
+  statistics:
+  - mean
+? /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/work/diagnostic1/script1/MultiModelMedian_Amon_ta_2000-2002_mean.nc
+: ancestors:
+  - /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/preproc/diagnostic1/ta/MultiModelMedian_Amon_ta_2000-2002.nc
+  authors:
+  - andela_bouwe
+  - righi_mattia
+  caption: Average Air Temperature between 2000 and 2002 according to MultiModelMedian.
+  domains:
+  - global
+  plot_file: /pf/b/b381141/failed/examples/recipe_python.yml/recipe_python_20200730_091045/plots/diagnostic1/script1/MultiModelMedian_Amon_ta_2000-2002_mean.png
+  plot_types:
+  - zonal
+  references:
+  - acknow_project
+  statistics:
+  - mean

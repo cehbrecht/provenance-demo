@@ -1,0 +1,40 @@
+? /pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/work/rainfarm/rainfarm/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_downscaled_0001.nc
+: themes: 
+  - phys
+  statistics: 
+  - other
+  references: 
+  - donofrio14jh
+  - rebora06jhm
+  - terzago18nhess
+  ancestors: /pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997.nc
+  projects: 
+  - c3s-magic
+  caption: RainFARM precipitation downscaling
+  domains: 
+  - reg
+  authors: 
+  - vonhardenberg_jost
+  - arnone_enrico
+  realms: 
+  - atmos
+? /pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/work/rainfarm/rainfarm/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997_downscaled_0002.nc
+: themes: 
+  - phys
+  statistics: 
+  - other
+  references: 
+  - donofrio14jh
+  - rebora06jhm
+  - terzago18nhess
+  ancestors: /pf/b/b381141/failed/recipe_rainfarm.yml/recipe_rainfarm_20200724_133725/preproc/rainfarm/pr/CMIP5_EC-EARTH_day_historical_r1i1p1_pr_1997-1997.nc
+  projects: 
+  - c3s-magic
+  caption: RainFARM precipitation downscaling
+  domains: 
+  - reg
+  authors: 
+  - vonhardenberg_jost
+  - arnone_enrico
+  realms: 
+  - atmos
