@@ -8,3 +8,5 @@ dependencies:
   - prov
   - ipython
   - jupyterlab
+  - pip:
+    - rooki
